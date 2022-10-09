@@ -1,0 +1,95 @@
+| Run on Sun Aug 28 22:58:25 2022
+|
+|Input file:
+|--------------------------------------------------------------
+|input file for running PB and GB
+|&general
+|     startframe = 4500, endframe = 5000, interval = 100, verbose=1, keep_files=0
+|/
+|&gb
+|  igb=8, saltcon=0.150
+|/
+|&decomp
+|  idecomp = 2
+|/
+|
+|--------------------------------------------------------------
+|MMPBSA.py Version=14.0
+|Solvated complex topology file:  cpx_solvated_hmr.prmtop
+|Complex topology file:           cpx_hmr.prmtop
+|Receptor topology file:          rec_hmr.prmtop
+|Ligand topology file:            lig_hmr.prmtop
+|Initial mdcrd(s):                prod.nc
+|
+|Receptor mask:                  ":1-255"
+|Ligand mask:                    ":256"
+|Ligand residue name is "MOL"
+|
+|Calculations performed using 6.0 complex frames.
+|
+|Generalized Born ESURF calculated using 'LCPO' surface areas
+|
+|All units are reported in kcal/mole.
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+GENERALIZED BORN:
+
+Complex:
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+VDWAALS                  -2058.6002               16.9063              6.9020
+EEL                     -18024.7050               94.5990             38.6199
+EGB                      -3251.3260               73.9547             30.1919
+ESURF                       89.9044                1.6030              0.6544
+
+G gas                   -20083.3052               97.0156             39.6065
+G solv                   -3161.4217               72.6256             29.6493
+
+TOTAL                   -23244.7269               42.5915             17.3879
+
+
+Receptor:
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+VDWAALS                  -2025.8593               15.6847              6.4033
+EEL                     -18122.5758               90.0580             36.7660
+EGB                      -3236.5426               68.8521             28.1087
+ESURF                       89.2217                1.5073              0.6153
+
+G gas                   -20148.4351               89.8255             36.6711
+G solv                   -3147.3209               67.6328             27.6110
+
+TOTAL                   -23295.7560               42.0591             17.1705
+
+
+Ligand:
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+VDWAALS                     -1.0070                3.8590              1.5754
+EEL                        131.0992                9.9952              4.0805
+EGB                        -61.8612                4.3802              1.7882
+ESURF                        4.2366                0.0173              0.0071
+
+G gas                      130.0922                8.9569              3.6566
+G solv                     -57.6246                4.3746              1.7859
+
+TOTAL                       72.4676                4.8578              1.9832
+
+
+Differences (Complex - Receptor - Ligand):
+Energy Component            Average              Std. Dev.   Std. Err. of Mean
+-------------------------------------------------------------------------------
+VDWAALS                    -31.7339                1.1553              0.4716
+EEL                        -33.2284                9.6260              3.9298
+EGB                         47.0777                5.6673              2.3137
+ESURF                       -3.5539                0.1195              0.0488
+
+DELTA G gas                -64.9623                9.0696              3.7026
+DELTA G solv                43.5238                5.6196              2.2942
+
+DELTA TOTAL                -21.4385                3.8979              1.5913
+
+
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
